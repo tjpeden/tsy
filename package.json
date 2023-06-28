@@ -1,0 +1,16 @@
+{
+  "name": "tsy",
+  "version": "1.0.0",
+  "description": "Bevy-esque Game Engine in TypeScript",
+  "author": "TJ Peden",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "4.0.0"
+  }
+}

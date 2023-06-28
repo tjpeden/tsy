@@ -1,0 +1,32 @@
+{
+  "name": "pupisyou",
+  "version": "1.0.0",
+  "description": "Tsy Test Application",
+  "author": "TJ Peden",
+  "license": "MIT",
+  "main": "bin/index.js",
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build:types": "tsc --noEmit",
+    "build:source": "babel src -d bin -x '.ts'",
+    "build": "yarn build:types && yarn build:source",
+    "start": "node bin/index.js > out.log",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@tsy/app": "1.0.0",
+    "@tsy/ecs": "1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.8",
+    "@babel/core": "7.16.7",
+    "@babel/preset-env": "7.16.8",
+    "@babel/preset-typescript": "7.16.7",
+    "@types/jest": "27.4.0",
+    "jest": "27.4.7",
+    "ts-jest": "27.1.3",
+    "typescript": "4.5.4"
+  }
+}

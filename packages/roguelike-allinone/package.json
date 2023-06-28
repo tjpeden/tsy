@@ -1,0 +1,24 @@
+{
+  "name": "allinone",
+  "version": "1.0.0",
+  "description": "test app",
+  "author": "TJ Peden",
+  "license": "MIT",
+  "main": "bin/index.js",
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "build:types": "tsc --noEmit",
+    "build:source": "babel src -d bin -x '.ts'",
+    "build": "yarn build:types && yarn build:source",
+    "start": "node bin/index.js > out.log"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.8",
+    "@babel/core": "7.16.7",
+    "@babel/preset-env": "7.16.8",
+    "@babel/preset-typescript": "7.16.7",
+    "typescript": "4.5.4"
+  }
+}
